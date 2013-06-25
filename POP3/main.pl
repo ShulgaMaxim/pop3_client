@@ -51,7 +51,7 @@ if ($length) {
 		my $data = <SOCK>;
 		my @len = split " ", $data, 3;
 		my $len = $len[2];
-		send (SOCK, "RETR $i\n", 0);
+		send (SOCK, "TOP $i 0\n", 0);
 		my $text;
 		while (<SOCK>) {
 			last if ($_ =~ /(^\.)/);
