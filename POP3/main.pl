@@ -22,7 +22,7 @@ if ((substr $data,0,3) eq "+OK") {
 	if (($data =~ /(^\+OK)/)) {
 		send (SOCK, "PASS $pass\n", 0);
 		$data = <SOCK>;
-		if (($data =~ /(^\+OK)/)) {
+		if ((substr $data,0,3) eq "+OK") {
 			print "Welcome!\n"
 		} else {
 			print "Bad user_name or pass\n";
@@ -37,7 +37,7 @@ if ((substr $data,0,3) eq "+OK") {
 my $length;
 send (SOCK, "STAT\n", 0);
 $data = <SOCK>;
-if (($data =~ /(^\+OK)/)) {
+if ((substr $data,0,3) eq "+OK") {
 	my @data = split (" ", $data, 3);
 	$length = $data[1];
 	print $length;
@@ -54,11 +54,11 @@ if ($length) {
 		send (SOCK, "TOP $i 0\n", 0);
 		my $text;
 		while (<SOCK>) {
-			last if ($_ =~ /(^\.)/);
+			last if $_ eq ".\r\n";
 			$text .= $_;
 		}
 		
-		if (($text =~ /(^\+OK)/)) {
+		if ((substr $text,0,3) eq "+OK") {
 			print "\n\nMessage №$i\n";
 			&parser($text, $len);
 		} else {
@@ -69,7 +69,6 @@ if ($length) {
 }
 
 close(SOCK);
-print "$host $user_name $pass \n";
 
 
 sub parser {
