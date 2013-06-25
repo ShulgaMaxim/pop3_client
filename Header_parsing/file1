@@ -1,0 +1,54 @@
++OK 2623 octets
+Return-path: <mshulgaa@gmail.com>
+Authentication-Results: mxs.mail.ru; spf=pass (mx169.mail.ru: domain of gmail.com designates 209.85.128.174 as permitted sender) smtp.mailfrom=mshulgaa@gmail.com smtp.helo=mail-ve0-f174.google.com;
+	 dkim=pass header.i=gmail.com
+Received-SPF: pass (mx169.mail.ru: domain of gmail.com designates 209.85.128.174 as permitted sender) client-ip=209.85.128.174; envelope-from=mshulgaa@gmail.com; helo=mail-ve0-f174.google.com;
+Received: from [209.85.128.174] (port=40063 helo=mail-ve0-f174.google.com)
+	by mx169.mail.ru with esmtp (envelope-from <mshulgaa@gmail.com>)
+	id 1UrLCP-0004Z9-Qg
+	for testpopclient@mail.ru; Tue, 25 Jun 2013 08:49:50 +0400
+X-Mru-BL: 0:0:1121
+X-Mru-PTR: off
+X-Mru-NR: 1
+X-Mru-OF: Linux (Google)
+X-Mru-RC: US
+Received: by mail-ve0-f174.google.com with SMTP id oz10so9476269veb.5
+        for <testpopclient@mail.ru>; Mon, 24 Jun 2013 21:49:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=3dADhu7WMk/MnYQLz1caT101oUaFFH6Vkct1KPIHUdc=;
+        b=UJdBbGpVUeTxSTuUXnlPkS/e8wZA1g5IBXcn9REQ/fpQaUkxOcrfoS90OpKgGI1jPw
+         /ynhxBelf6rwKE1bexQHvfq6FiEi0BTJSrArKsWBYeqz+CXLhmMTbsSkCafSRt+EhxKl
+         T8UFTDjWXlaZVOaCXxb+4RWq35U2eazvd2YRv/6VyTX5O8VQwgrMJsA5oqTwhAxA8TyE
+         diogxF/Ua+ilD/amdIwz/OhJHFuxLb8DAzYcXnOrLV291L9W6lXZYzBuZn45ieusU3Zm
+         EhpVCSftUsyL5QuoaAdgDF67qmAzwHykyGA5tERilQOwm6kVyKjKB043/5CDcZXKzyVY
+         cruA==
+MIME-Version: 1.0
+X-Received: by 10.52.65.111 with SMTP id w15mr10745768vds.73.1372135789261;
+ Mon, 24 Jun 2013 21:49:49 -0700 (PDT)
+Received: by 10.59.0.197 with HTTP; Mon, 24 Jun 2013 21:49:49 -0700 (PDT)
+Date: Tue, 25 Jun 2013 10:49:49 +0600
+Message-ID: <CA+oY0YjY5=UCzg_727f+y6gtCoJHqNJeOVBG9J2eN9CYqBxP4g@mail.gmail.com>
+Subject: =?KOI8-R?B?zcHNwSDN2czPINLBzdU=?=
+From: Max Shulga <mshulgaa@gmail.com>
+To: testpopclient@mail.ru
+Content-Type: multipart/alternative; boundary=20cf307f3b444d767704dff34271
+X-Spam: Not detected
+X-Mras: Ok
+X-Mru-Authenticated-Sender: mshulgaa@gmail.com
+
+--20cf307f3b444d767704dff34271
+Content-Type: text/plain; charset=KOI8-R
+Content-Transfer-Encoding: base64
+
+xtnXDQotLSANCvMg1dfB1sXOycXNLCD71czYx8Eg7cHL08nNLg0K89DB08nCzy4NCg==
+--20cf307f3b444d767704dff34271
+Content-Type: text/html; charset=KOI8-R
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+PGJyIGNsZWFyPSJhbGwiPjxkaXY+xtnXPC9kaXY+LS0gPGJyPvMg1dfB
+1sXOycXNLCD71czYx8Eg7cHL08nNLjxkaXY+89DB08nCzy48L2Rpdj4NCjwvZGl2Pg0K
+--20cf307f3b444d767704dff34271--
+
+.
