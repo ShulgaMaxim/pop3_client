@@ -63,7 +63,7 @@ if ($length) {
 			&parser($text, $len);
 		} else {
 			print ((substr $text,0,3)."\n");
-			print "Bad \"RETR $i\" request\n"; 
+			print "Bad \"TOP $i\" request\n"; 
 		}
 	}
 }
